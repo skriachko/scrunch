@@ -23,13 +23,13 @@ Feed aircrack-ng with password generator output on charset "ABCDEFabcdef12345678
 --no-rep: Each symbol can repeat only once.
 
 ```
-python scrunch.pyc --no-rep 5 8 ABCDEFabcdef1234567890 | aircrack-ng -b AA:BB:CC:DD:EE:FF -w- *.cap
+python3 scrunch.py --no-rep 5 8 ABCDEFabcdef1234567890 | aircrack-ng -b AA:BB:CC:DD:EE:FF -w- *.cap
 ```
 
 Example 2:
 Generate wordlist.txt with all possible password combinations using all uppercase, all lowercase and all digits.
 ```
-python scrunch.pyc --no-rep -u -l -d -ex ABCD -f wordlist.txt 5 5 DUMMY
+python3 scrunch.py --no-rep -u -l -d -ex ABCD -f wordlist.txt 5 5 DUMMY
 ```
 Where
 ```
@@ -45,7 +45,7 @@ Where
 
 Example 3:
 ```
-python scrunch.pyc --no-rep 3 3 AB12
+python3 scrunch.py --no-rep 3 3 AB12
 ```
 Output:
 ```
@@ -81,7 +81,7 @@ BA2
 For help use:
 
 ```
-python scrunch.pyc -h
+python3 scrunch.py -h
 ```
 
 ## Reference
